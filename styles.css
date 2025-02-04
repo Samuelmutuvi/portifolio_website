@@ -92,8 +92,9 @@ nav ul li a:hover {
 /* About Section */
 #about {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #3c6d6a;
     text-align: center;
+    color: white;
 }
 
 #about h2 {
@@ -216,7 +217,7 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #e8e1e1;
     text-align: center;
 }
 
