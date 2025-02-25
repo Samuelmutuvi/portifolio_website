@@ -9,12 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
 <body>
+    <div class='theme-toggle-container'>
+        <label class='theme-toggle'>
+            <input type='checkbox' id='theme-toggle'>
+            <span class='slider'></span>
+            <span class='labels' data-on="On" data-off='Off'> Mode </span>
+        </label>
+    </div>
     <!-- Header Section -->
     <header>
         <div class="logo">
             <h1>Welcome to Mutuvitech Solutions</h1>
             <h2><marquee>'Transforming Ideas to Reality'</marquee></h2>
         </div>
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -25,11 +33,12 @@
         </nav>
     </header>
 
+
     <!-- Hero Section -->
     <section id="home" class="hero fade-in">
         <img src="profile.JPg" alt="Samuel Mutuvi" class="about-photo">
         <h2>Hello, I'm Samuel Mutuvi</h2>
-        <p>A passionate Software Developer, Data Analyst, and Actuarial Science enthusiast with expertise in web development, data analysis, and business intelligence..</p>
+        <p>A passionate Software Developer, Data Analyst, and Actuarial Science enthusiast with expertise in web development, data analysis, and business intelligence.</p>
         <a href="#portfolio" class="btn">View My Work</a>
     </section>
 
@@ -44,9 +53,9 @@
                     <p>Have skills in:</p>
                     <ul>
                         <li><strong>Excel, SPSS, and STATA</strong> for quantitative data analysis</li>
-                        <li><strong>KOBO/ODK, NVivo</strong> for qualitative data analysis</li>
+                        <li><strong>KOBO/ODK, NVivo , Commcare</strong> for qualitative data analysis</li>
                         <li><strong>HTML, CSS, JavaScript</strong> for website development</li>
-                        <li><strong>Power BI </strong> for business intelligence</li>
+                        <li><strong>Power BI,Tableau </strong> for business intelligence and visualization</li>
                         <li><strong>R</strong> for statistical computing</li>
                         <li><strong>MySQL</strong> for database management.</li>
                         <li><strong>Report Writing</strong></li>
@@ -92,8 +101,9 @@
     <!-- Footer Section -->
     <footer class ="footer">
         <p>&copy; 2025 Mutuvitech Solutions. All rights reserved.</p>
-    
     </footer >
+
+    <button id="back-to-top" class="back-to-top-button">🏠Back to top</button>
 	<!--the javascript file-->
 	<script src="script.js"></script>
 </body>

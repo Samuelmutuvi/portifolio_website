@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Floating Button Test</title>
+  <style>
+    .floating-home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .home-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    .floating-home-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <a href="#home" class="floating-home-button">🏠</a>
+
+  <!-- Add enough content to scroll -->
+  <div style="height: 2000px;">
+    Scroll down to see the floating button.
+  </div>
+</body>
+</html>

@@ -295,4 +295,41 @@ nav ul li a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: right;
+    background-color: #109fe2;
+    color: rgb(215, 219, 217);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(175, 47, 47, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    display: none; /* Hide by default */
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #2316e5;
+  }
+
+.floating-home-button:hover{
+    background-color: rgb(226, 14, 14);
+}
+
+@media (max-width: 768px) {
+    .floating-home-button {
+      bottom: 10px;
+      right: 10px;
+      padding: 10px;
+    }
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
 }

@@ -14,6 +14,25 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+const themeToggle = document.getElementById('theme-toggle');
+
+// Check for saved theme in localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeToggle.checked = true;
+}
+
+// Toggle dark mode
+themeToggle.addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
 // Dynamic Active Navigation
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section'); // Get all sections
@@ -79,3 +98,24 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+// Show the button when the user scrolls down 200px
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 50) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+// Scroll to the top when the button is clicked
+backToTopButton.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
