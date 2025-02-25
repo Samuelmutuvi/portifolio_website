@@ -332,4 +332,107 @@ nav ul li a:hover {
     background-color: #121212;
     color: #ffffff;
   }
+
+  /* Theme Toggle Container */
+.theme-toggle-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  /* Toggle Switch */
+  .theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide the default checkbox */
+  .theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  /* Slider Knob */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  /* When the checkbox is checked (dark mode on) */
+  input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Labels for On/Off */
+  .labels {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .labels::before {
+    content: attr(data-off);
+    position: absolute;
+    right: 5px;
+  }
+  
+  input:checked + .slider + .labels::before {
+    content: attr(data-on);
+    left: 5px;
+    right: auto;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer,
+  body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  body.dark-mode a {
+    color: #bb86fc;
+  }
+  
+  body.dark-mode .btn {
+    background-color: #bb86fc;
+    color: #121212;
+  }
 }
