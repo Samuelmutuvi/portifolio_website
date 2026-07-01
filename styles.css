@@ -157,7 +157,7 @@ nav ul li a:hover {
 /* Portfolio Section */
 #portfolio {
     padding: 60px 20px;
-    background-color: #f6f8ea;
+    /* background-color: #f6f8ea; */
     background-image: url('logisti.jpg');
     opacity: 1;
     z-index:0;
@@ -213,7 +213,7 @@ nav ul li a:hover {
 /* Resume Section */
 #resume {
     padding: 60px 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     text-align: center;
 }
 
@@ -238,7 +238,7 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
     padding: 60px 20px;
-    background-color: #e8e1e1;
+    /* background-color: #e8e1e1; */
     text-align: center;
 }
 
